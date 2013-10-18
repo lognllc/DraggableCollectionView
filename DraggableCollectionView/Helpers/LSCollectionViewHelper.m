@@ -231,6 +231,8 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
             if (![(id<UICollectionViewDataSource_Draggable>)self.collectionView.dataSource
                   collectionView:self.collectionView
                   canMoveItemAtIndexPath:indexPath]) {
+                sender.enabled = NO;
+                sender.enabled = YES;
                 return;
             }
             // Create mock cell to drag around
