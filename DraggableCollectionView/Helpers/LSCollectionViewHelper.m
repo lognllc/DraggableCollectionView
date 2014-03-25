@@ -183,7 +183,7 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
             continue;
         }
         NSInteger items = [self.collectionView numberOfItemsInSection:i];
-        NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:items inSection:i];
+        NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:items - 1 inSection:i];
         UICollectionViewLayoutAttributes *layoutAttr;
         CGFloat xd, yd;
         
